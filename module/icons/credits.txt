@@ -1,0 +1,119 @@
+d20.svg - https://game-icons.net/1x1/delapouite/dice-twenty-faces-twenty.html
+crossed-sabres.svg - https://game-icons.net/1x1/lorc/crossed-sabres.html
+Armor - https://game-icons.net/tags/armor.html
+
+Clothing
+    Fur - https://game-icons.net/1x1/delapouite/fur-shirt.html
+    Noble - https://game-icons.net/1x1/delapouite/pirate-coat.html
+    Standard - https://game-icons.net/1x1/lucasms/shirt.html
+    Poor - https://game-icons.net/1x1/delapouite/t-shirt.html
+    Winter - https://game-icons.net/1x1/delapouite/winter-gloves.html
+
+Food
+    Animal - https://game-icons.net/1x1/delapouite/dog-bowl.html
+    Bacon - https://game-icons.net/1x1/skoll/ham-shank.html
+    Bread - https://game-icons.net/1x1/lorc/sliced-bread.html
+    Cheese - https://game-icons.net/1x1/lorc/cheese-wedge.html
+    Cider - https://game-icons.net/1x1/delapouite/barrel.html
+    Cod - https://game-icons.net/1x1/various-artists/salmon.html
+    Eggs - https://game-icons.net/1x1/lorc/egg-clutch.html
+    Flour - https://game-icons.net/1x1/delapouite/powder-bag.html
+    Fruit - https://game-icons.net/1x1/delapouite/berries-bowl.html
+    Garlic - https://game-icons.net/1x1/delapouite/garlic.html
+    Grain - https://game-icons.net/1x1/delapouite/grain.html
+    Herbs - https://game-icons.net/1x1/delapouite/herbs-bundle.html
+    Lard - https://game-icons.net/1x1/delapouite/butter.html
+    Onion - https://www.flaticon.com/authors/freepik
+    Salt - https://game-icons.net/1x1/lorc/powder.html
+    Spices - https://game-icons.net/1x1/lorc/cool-spices.html
+    Travel Rations - https://game-icons.net/1x1/delapouite/bindle.html
+    Wine/Ale Bottle - https://game-icons.net/1x1/delapouite/wine-bottle.html
+
+Light
+    Candle - https://game-icons.net/1x1/lorc/candle-light.html
+    Lantern - https://game-icons.net/1x1/delapouite/old-lantern.html
+    Torch - https://game-icons.net/1x1/delapouite/torch.html
+    Lamp Oil - https://www.flaticon.com/authors/eucalyp"
+    Tinderbox - https://game-icons.net/1x1/delapouite/matchbox.html
+
+Weapons
+    Arrows - https://game-icons.net/1x1/lorc/arrow-cluster.html
+    Axe - https://game-icons.net/1x1/delapouite/hatchet.html
+    Battle Axe - https://game-icons.net/1x1/lorc/battle-axe.html
+    Bow - https://game-icons.net/1x1/lorc/high-shot.html
+    Crossbow - https://game-icons.net/1x1/carl-olsen/crossbow.html
+    Cudgel - https://www.flaticon.com/authors/good-ware
+    Dagger - https://game-icons.net/1x1/lorc/high-shot.html
+    Flail - https://game-icons.net/1x1/delapouite/flail.html
+    Halberd - https://game-icons.net/1x1/delapouite/sharp-halberd.html
+    Long Sword - https://game-icons.net/1x1/delapouite/two-handed-sword.html
+    Mace - https://www.flaticon.com/free-icon/mace_2614302?term=mace&page=2&position=36
+    Quiver - https://game-icons.net/1x1/delapouite/quiver.html
+    Sickle - https://game-icons.net/1x1/delapouite/sickle.html
+    Spear - https://www.flaticon.com/free-icon/spear_1083342?term=spear&page=2&position=9
+    Sling - https://game-icons.net/1x1/delapouite/sling.html
+    Staff - https://game-icons.net/1x1/delapouite/bo.html
+    Sword - https://www.flaticon.com/free-icon/sword_2928005?term=sword&page=1&position=22
+    War Hammer - https://game-icons.net/1x1/lorc/flat-hammer.html
+
+Items
+    Air Bladder - https://www.flaticon.com/free-icon/wineskin_1015524?term=wineskin&page=1&position=3
+    Bear Trap - https://game-icons.net/1x1/lorc/wolf-trap.html
+    Bedroll - https://www.flaticon.com/free-icon/bedroll_1937458?term=bed%20roll&page=1&position=4
+    Bellows - https://game-icons.net/1x1/delapouite/bellows.html
+    Black Grease - https://game-icons.net/1x1/lorc/round-bottom-flask.html
+    Block and Tackle - https://game-icons.net/1x1/delapouite/pulley-hook.html
+    Bucket - https://game-icons.net/1x1/delapouite/empty-wood-bucket-handle.html
+    Book Blank  - https://game-icons.net/1x1/delapouite/empty-wood-bucket-handle.html
+    Book Reading - https://game-icons.net/1x1/lorc/bookmark.html
+    Bottle/Vial - https://game-icons.net/1x1/lorc/square-bottle.html
+    Caltrops - https://game-icons.net/1x1/delapouite/caltrops.html
+    Cards - https://game-icons.net/1x1/lorc/poker-hand.html
+    Chain - https://game-icons.net/1x1/lorc/wavy-chains.html
+    Chisel - https://game-icons.net/1x1/delapouite/chisel.html
+    Cook Pot - https://game-icons.net/1x1/delapouite/cooking-pot.html
+    Crowbar - https://game-icons.net/1x1/delapouite/crowbar.html
+    Drill - https://game-icons.net/1x1/delapouite/corkscrew.html
+    Gems - https://game-icons.net/1x1/lorc/gems.html
+    Glue - https://www.flaticon.com/free-icon/glue_3237805?term=glue%20bottle&page=1&position=2
+    Face Paint - https://game-icons.net/1x1/delapouite/lipstick.html
+    Fishing Pole - https://game-icons.net/1x1/delapouite/fishing-pole.html   
+    Glass Marbles - https://game-icons.net/1x1/delapouite/marbles.html 
+    Grapple Hook - https://game-icons.net/1x1/lorc/grapple.html
+    Hammer - https://game-icons.net/1x1/lorc/claw-hammer.html
+    Holy Water - https://game-icons.net/1x1/delapouite/holy-water.html
+    Hour Glass - https://game-icons.net/1x1/lorc/hourglass.html
+    Horn - https://game-icons.net/1x1/delapouite/trumpet-flag.html
+    Incesnse Packet - https://game-icons.net/1x1/lorc/incense.html
+    Iron Tongs - https://www.flaticon.com/free-icon/tongs_106478?term=tongs&page=1&position=13
+    Ladder - https://game-icons.net/1x1/delapouite/ladder.html
+    Large Sponge - https://www.flaticon.com/free-icon/sponge_995071?term=sponge&page=1&position=9
+    Lens - https://game-icons.net/1x1/lorc/magnifying-glass.html
+    Lockpicks - https://game-icons.net/1x1/delapouite/lockpicks.html
+    Manacles - https://game-icons.net/1x1/lorc/manacles.html
+    Mirror - https://game-icons.net/1x1/lorc/mirror-mirror.html
+    Metal File - https://www.flaticon.com/authors/monkik
+    Musical Instrument - https://game-icons.net/1x1/delapouite/flute.html
+    Nails - https://game-icons.net/1x1/lorc/nails.html
+    Net - https://game-icons.net/1x1/lorc/fishing-net.html
+    Oil Skin Bag - https://game-icons.net/1x1/lorc/knapsack.html
+    Padlock - https://game-icons.net/1x1/lorc/padlock.html
+    Perfume - https://game-icons.net/1x1/lorc/perfume-bottle.html
+    Pick - https://game-icons.net/1x1/lorc/dig-dug.html
+    Quill and Ink - https://game-icons.net/1x1/lorc/quill-ink.html
+    Sack - https://game-icons.net/1x1/lorc/swap-bag.html
+    Saw - https://game-icons.net/1x1/delapouite/hand-saw.html
+    Set of Load Dice - https://game-icons.net/1x1/delapouite/rolling-dices.html
+    Shovel - https://game-icons.net/1x1/lorc/sword-spade.html
+    Soap - https://game-icons.net/1x1/delapouite/soap.html    
+    Small Bell - https://game-icons.net/1x1/lorc/ringing-bell.html
+    Spike Boots - https://game-icons.net/1x1/lorc/boot-stomp.html
+    Spyglass - https://game-icons.net/1x1/lorc/spyglass.html    
+    Stake - https://game-icons.net/1x1/delapouite/stake-hammer.html
+    Rope - https://game-icons.net/1x1/delapouite/rope-coil.html
+    Tar Pot - https://game-icons.net/1x1/delapouite/covered-jar.html
+    Tent Personal - https://game-icons.net/1x1/delapouite/camping-tent.html
+    Ten 3 man - https://game-icons.net/1x1/delapouite/barracks-tent.html
+    Twine - https://game-icons.net/1x1/delapouite/yarn.html
+    Water Skin - https://game-icons.net/1x1/delapouite/magic-potion.html
+    Whistle - https://game-icons.net/1x1/delapouite/whistle.html

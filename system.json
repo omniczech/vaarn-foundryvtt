@@ -1,0 +1,111 @@
+{
+  "id": "vaultsofvaarn",
+  "name": "vaultsofvaarn",
+  "title": "Vaults of Vaarn",
+  "description": "Vaults of Vaarn is a rules toolkit and setting created by Leo Hunt for exploring a post apocalyptic, near earth wasteland.",
+  "version": "0.0.1",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": 10,
+    "verified": "10.278"
+  },
+  "templateVersion": 2,
+  "author": "omniczech",
+  "esmodules": ["module/knave.js"],
+  "styles": ["css/knave.css"],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "armor",
+      "label": "Armor",
+      "system": "vaultsofvaarn",
+      "path": "./packs/armor.db",
+      "entity": "Item"
+    },
+    {
+      "name": "clothing",
+      "label": "Cothing",
+      "system": "vaultsofvaarn",
+      "path": "./packs/clothing.db",
+      "entity": "Item"
+    },
+    {
+      "name": "food",
+      "label": "Food",
+      "system": "vaultsofvaarn",
+      "path": "./packs/food.db",
+      "entity": "Item"
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "system": "vaultsofvaarn",
+      "path": "./packs/items.db",
+      "entity": "Item"
+    },
+    {
+      "name": "light",
+      "label": "Light",
+      "system": "vaultsofvaarn",
+      "path": "./packs/light.db",
+      "entity": "Item"
+    },
+    {
+      "name": "macros",
+      "label": "Macros",
+      "system": "vaultsofvaarn",
+      "path": "./packs/macros.db",
+      "entity": "Macro"
+    },
+    {
+      "name": "other",
+      "label": "Other",
+      "system": "vaultsofvaarn",
+      "path": "./packs/other.db",
+      "entity": "RollTable"
+    },
+    {
+      "name": "rules",
+      "label": "Rules",
+      "system": "vaultsofvaarn",
+      "path": "./packs/rules.db",
+      "entity": "JournalEntry"
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "system": "vaultsofvaarn",
+      "path": "./packs/spells.db",
+      "entity": "Item"
+    },
+    {
+      "name": "starting-gear",
+      "label": "Starting Gear",
+      "system": "vaultsofvaarn",
+      "path": "./packs/starting-gear.db",
+      "entity": "RollTable"
+    },
+    {
+      "name": "traits",
+      "label": "Traits",
+      "system": "vaultsofvaarn",
+      "path": "./packs/traits.db",
+      "entity": "RollTable"
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons",
+      "system": "vaultsofvaarn",
+      "path": "./packs/weapons.db",
+      "entity": "Item"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "url": "https://github.com/omniczech/vaultsofvaarn",
+  "manifest": "https://raw.githubusercontent.com/omniczech/vaultsofvaarn/master/system.json",
+  "download": "https://github.com/omniczech/vaultsofvaarn/archive/1.8.0.zip",
+  "license": "LICENSE.txt"
+}
