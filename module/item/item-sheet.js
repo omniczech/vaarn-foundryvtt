@@ -3,21 +3,25 @@
  * @extends {ItemSheet}
  */
 export class KnaveItemSheet extends ItemSheet {
-
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["knave", "sheet", "item"],
       width: 520,
       height: 480,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]      
+      tabs: [
+        {
+          navSelector: ".sheet-tabs",
+          contentSelector: ".sheet-body",
+          initial: "description",
+        },
+      ],
     });
   }
 
   /** @override */
-  get template() 
-  {
-    const path = "systems/knave/templates/item";
+  get template() {
+    const path = "systems/vaultsofvaarn/templates/item";
     // Return a single sheet for all item types.
     //return `${path}/item-sheet.html`;
     // Alternatively, you could use the following return statement to do a
@@ -30,7 +34,7 @@ export class KnaveItemSheet extends ItemSheet {
 
   /** @override */
   getData() {
-    let data = super.getData();       
+    let data = super.getData();
     data.dtypes = ["String", "Number", "Boolean"];
     return data;
   }
