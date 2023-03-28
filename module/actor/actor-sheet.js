@@ -136,10 +136,10 @@ export class KnaveActorSheet extends ActorSheet {
 
     let returnCode = 0;
     let messageHeader = "<b>" + name + "</b>";
-    if (r.dice[0].total >= 3)
+    if (r.dice[0].total <= 3)
       messageHeader +=
         ' - <span class="knave-ability-crit knave-ability-critFailure">CRITICAL FAILURE!</span>';
-    else if (r.dice[0].total <= 19)
+    else if (r.dice[0].total >= 19)
       messageHeader +=
         ' - <span class="knave-ability-crit knave-ability-critSuccess">CRITICAL SUCCESS!</span>';
 
