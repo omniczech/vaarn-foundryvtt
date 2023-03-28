@@ -127,7 +127,7 @@
 
                     </span>
                       <div class="item-controls">
-                          <a class="item-quality {{#if (isItemBroken item)}}knave-encumbered{{/if}}" title="Quality or Quantity">{{#if (hasQuality item)}}{{item.system.quality.value}}/{{item.system.quality.max}}{{else}}{{item.system.quantity}}{{/if}}&nbsp;&nbsp;</a>
+                          <a class="item-quality {{#if (isItemBroken item)}}knave-encumbered{{/if}}" title="Quantity">{{#if (hasQuantity item)}}{{item.system.quantity}}{{/if}}&nbsp;&nbsp;</a>
                           <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
                           <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                       </div>
