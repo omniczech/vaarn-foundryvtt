@@ -31,15 +31,7 @@
           </div>
         </div>
 
-        <div class="flex-group-center">
-          <span class="resource-label">MOVEMENT</span>
-          <input type="text" name="system.movement" value="{{data.system.movement}}" data-dtype="String"/>
-          <div class="abilities grid grid-3col">
-            <span class="resource-label">MORALE</span>
-            <input type="text" name="system.morale.value" value="{{data.system.morale.value}}" data-dtype="Number"/>
-            <button class="knave-morale-button resource-label">Check</button>
-          </div>
-        </div>
+
       </div>
    <!--end first col-->
    <!--second col-->
@@ -49,13 +41,19 @@
               <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
               <div class="abilities grid grid-col">
                 <div class="flex-group-center">
-                <label for="system.level.value" class="resource-label">LEVEL</label>
-                <input type="text" name="system.level.value" value="{{data.system.level.value}}" data-dtype="Number"/>
+                  <label for="system.level.value" class="resource-label">LEVEL</label>
+                  <input type="text" name="system.level.value" value="{{data.system.level.value}}" data-dtype="Number"/>
+                </div>
+                <div class="flex-group-center">
+                  <label for="system.xp.value" class="resource-label">XP</label>
+                  <input type="text" name="system.xp.value" value="{{data.system.xp.value}}" data-dtype="Number"/>
+                </div> 
               </div>
-              <div class="flex-group-center">
-                <label for="system.xp.value" class="resource-label">XP</label>
-                <input type="text" name="system.xp.value" value="{{data.system.xp.value}}" data-dtype="Number"/>
-              </div>
+              <div class="abilities grid grid-col">
+                <div class="flex-group-center">
+                  <label for="system.Ancestry.value" class="resource-label">ANCESTRY</label>
+                  <input type="text" name="system.Ancestry.value" value="{{data.system.Ancestry.value}}" data-dtype="Number"/>
+                </div>
               </div>
           </div>
           {{!-- Sheet Tab Navigation --}}
@@ -92,24 +90,8 @@
                 <input type="text" name="system.traits.speech" value="{{data.system.traits.speech}}" data-dtype="string"/>
               </span>
               <span>
-                <label for="system.traits.virtue" class="resource-label">Virtue</label>
-                <input type="text" name="system.traits.virtue" value="{{data.system.traits.virtue}}" data-dtype="string"/>
-              </span>
-              <span>
-                <label for="system.traits.vice" class="resource-label">Vice</label>
-                <input type="text" name="system.traits.vice" value="{{data.system.traits.vice}}" data-dtype="string"/>
-              </span>
-              <span>
                 <label for="system.traits.background" class="resource-label">Background</label>
                 <input type="text" name="system.traits.background" value="{{data.system.traits.background}}" data-dtype="string"/>
-              </span>
-              <span>
-                <label for="system.traits.misfortunes" class="resource-label">Misfortunes</label>
-                <input type="text" name="system.traits.misfortunes" value="{{data.system.traits.misfortunes}}" data-dtype="string"/>
-              </span>
-              <span>
-                <label for="system.traits.alignment" class="resource-label">Alignment</label>
-                <input type="text" name="system.traits.alignment" value="{{data.system.traits.alignment}}" data-dtype="string"/>
               </span>
             </div>
           </div>
