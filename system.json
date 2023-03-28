@@ -106,6 +106,6 @@
   "primaryTokenAttribute": "health",
   "url": "https://github.com/omniczech/vaultsofvaarn",
   "manifest": "https://raw.githubusercontent.com/omniczech/vaultsofvaarn/master/system.json",
-  "download": "https://github.com/omniczech/vaultsofvaarn/archive/1.8.0.zip",
+  "download": "https://github.com/omniczech/vaultsofvaarn/archive/0.0.1.zip",
   "license": "LICENSE.txt"
 }
