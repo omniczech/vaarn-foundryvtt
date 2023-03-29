@@ -1,7 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;800&family=Roboto:wght@300;400;500&display=swap");
 /* Global styles */
+
+:root {
+  --background-color: #153d7d;
+  --foreground-color: #ffffff;
+  --foreground-alt-color: #ffe900;
+  --highlight-background-color: #254d8d;
+  --highlight-foreground-color: #000000;
+  --sidebar-background-color: #153d7d;
+  --sidebar-foreground-color: #ffffff;
+  --sidebar-button-background-color: #000000;
+  --sidebar-button-foreground-color: #ffffff;
+  --window-background: #000000;
+  --chat-font: "Alegreya";
+  --chat-info-font: "Oswald";
+  --h1-font: "Blood Crow";
+  --h2-font: "FetteTrumpDeutsch";
+  --h3-font: "Old Cupboard";
+  --item-font: "Special Elite";
+  --journal-font: "Alegreya";
+  --journal-font-size: 18px;
+  --window-border-color: #222222;
+}
+
 .window-app {
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier New", sans-serif;
 }
 
 .grid,
@@ -110,7 +133,7 @@
 
 /* Styles limited to knave sheets */
 .knave .item-form {
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier New", sans-serif;
 }
 
 .knave .sheet-header {
@@ -170,11 +193,12 @@
 .knave .sheet-body .tab,
 .knave .sheet-body .tab .editor {
   height: 100%;
+  background: #fff;
 }
 
 .description-editor .tox {
-    min-height: 200px;
-    resize: vertical;
+  min-height: 200px;
+  resize: vertical;
 }
 
 .description-editor .tox-editor-container {
@@ -197,8 +221,8 @@
 
 .knave .tabs {
   height: 40px;
-  border-top: 1px solid #AAA;
-  border-bottom: 1px solid #AAA;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
 }
 
 .knave .tabs .item {
@@ -226,7 +250,7 @@
   height: 30px;
   line-height: 24px;
   padding: 3px 0;
-  border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid #bbb;
 }
 
 .knave .items-list .item .item-image {
@@ -249,34 +273,40 @@
   -ms-flex: 0 0 86px;
   flex: 0 0 86px;
   text-align: right;
+  line-break: strict;
+  white-space: nowrap;
 }
 
-.knave .item-roll img:hover
-{
-    opacity: .5;
+.knave .item-roll img:hover {
+  opacity: 0.5;
 }
 
-.knave-ability-button {width: 60px; height: 28px;}
-.knave-armor-button {width: 60px; height: 28px;}
-.knave-morale-button {width: 70px; height: 28px;}
+.knave-ability-button {
+  width: 60px;
+  height: 28px;
+}
+.knave-armor-button {
+  width: 60px;
+  height: 28px;
+}
+.knave-morale-button {
+  width: 70px;
+  height: 28px;
+}
 
-.knave-ability-crit
-{
+.knave-ability-crit {
   font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
 }
-.knave-ability-critSuccess
-{
+.knave-ability-critSuccess {
   color: green;
 }
-.knave-ability-critFailure
-{
+.knave-ability-critFailure {
   color: red;
 }
 
-.editor-content:empty:before
-{
+.editor-content:empty:before {
   content: "This text is editable";
 }
 
@@ -286,20 +316,100 @@
   resize: both;
 }
 
-.knave-encumbered
-{
+.knave-encumbered {
   color: red;
 }
 
-.knave .resource-label-small
-{
+.knave .resource-label-small {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
   vertical-align: middle;
 }
 
-.knave .align-left
-{
+.knave .align-left {
   text-align: left;
+}
+
+.window-app .window-content,
+.resource-label {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+.window-app .window-content input,
+.window-app .window-content textarea {
+  background: var(--highlight-background-color);
+  color: var(--text-color);
+}
+
+#chat-controls {
+  color: var(--foreground-color);
+}
+#chat-controls i.fas:hover {
+  color: var(--highlight-background-color);
+  text-shadow: 0 0 5px var(--highlight-background-color);
+}
+#chat-controls .roll-type-select {
+  color: var(--foreground-color);
+  background: var(--background-color);
+}
+#chat-controls select:focus {
+  box-shadow: 0 0 10px var(--highlight-background-color);
+}
+
+#chat-log {
+  background: var(--sidebar-background-color);
+}
+#chat-log .chat-message {
+  background: var(--highlight-background-color);
+  border: 3px solid #252525;
+  border-radius: 0;
+  color: var(--foreground-color);
+  margin-top: 6px;
+  font-family: "Courier New";
+  font-size: 16px;
+}
+#chat-log .message h4,
+#chat-log .message h3,
+#chat-log .message h2 {
+  color: var(--foreground-color);
+}
+#chat-log .message-metadata {
+  color: var(--foreground-color);
+}
+#chat-log .message h2 {
+  background: var(--highlight-background-color);
+  color: var(--highlight-foreground-color);
+}
+#chat-log .chat-message .message-header .message-sender {
+  font-family: "Courier New";
+  font-size: 20px;
+}
+#chat-log .chat-message .message-header .message-metadata {
+  font-family: "Courier New";
+  font-size: 12px;
+}
+#chat-log .chat-message .message-header span.flavor-text {
+  font-family: "Courier New";
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--foreground-color);
+}
+#chat-log .message .dice-formula,
+#chat-log .message .dice-total {
+  font-size: 16px;
+  border: 1px solid #252525;
+  border-radius: 0;
+}
+
+#chat-form textarea {
+  color: var(--foreground-color);
+  background: var(--background-color);
+  border: 2px solid #252525;
+  font-family: "Courier New";
+  font-size: 16px;
+}
+#chat-form textarea:focus {
+  outline: 2px solid var(--highlight-background-color);
+  box-shadow: 0 0 10px var(--highlight-background-color);
 }

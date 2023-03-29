@@ -100,17 +100,25 @@ export class KnaveActorSheet extends ActorSheet {
     return cls.create(itemData, { parent: this.actor });
   }
 
-  _onAbility_Clicked(ability) {
+  _onAbility_Clicked(ability, additional = null) {
     let score = 0;
     let name = "";
     switch (ability) {
       case "str":
         score = this.object.system.abilities.str.value;
-        name = "STR";
+        if (additional) {
+          name = additional;
+        } else {
+          name = "STR";
+        }
         break;
       case "dex":
         score = this.object.system.abilities.dex.value;
-        name = "DEX";
+        if (additional) {
+          name = additional;
+        } else {
+          name = "DEX";
+        }
         break;
       case "con":
         score = this.object.system.abilities.con.value;
@@ -194,7 +202,7 @@ export class KnaveActorSheet extends ActorSheet {
   _onItemRoll(item, eventTarget) {
     if (eventTarget.title === "attack") {
       if (item.type === "weaponMelee") {
-        const roll = this._onAbility_Clicked("str");
+        const roll = this._onAbility_Clicked("str", "Melee Attack");
 
         this._checkToHitTargets(roll, item);
       } else if (item.type === "weaponRanged") {
@@ -216,15 +224,9 @@ export class KnaveActorSheet extends ActorSheet {
   }
 
   _rangedAttackRoll(item) {
-    if (item.system.ammo.value > 0) {
-      const roll = this._onAbility_Clicked("wis");
+    const roll = this._onAbility_Clicked("dex", "Ranged Attack");
 
-      item.system.ammo.value -= 1;
-      item.update({ "system.ammo.value": item.system.ammo.value });
-      if (item.system.ammo.value <= 0) this._createNoAmmoMsg(item, true);
-
-      this._checkToHitTargets(roll, item);
-    } else this._createNoAmmoMsg(item, false);
+    this._checkToHitTargets(roll, item);
   }
 
   _createNoAmmoMsg(item, outOfAmmo) {

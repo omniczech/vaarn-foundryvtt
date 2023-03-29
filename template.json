@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character"],
+    "types": ["character", "foe"],
     "templates": {
       "base": {
         "health": {
@@ -69,6 +69,26 @@
         "misfortune": "",
         "alignment": ""
       }
+    },
+    "foe": {
+      "level": {
+        "value": 1,
+        "min": 1,
+        "max": 40
+      },
+      "armor": {
+        "value": 1,
+        "min": 1,
+        "max": 40
+      },
+      "morale": {
+        "value": 2,
+        "min": 2,
+        "max": 12
+      },
+      "appearing": "",
+      "attacks": "",
+      "notes": ""
     }
   },
   "Item": {

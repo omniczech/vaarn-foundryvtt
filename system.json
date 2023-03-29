@@ -3,7 +3,7 @@
   "name": "vaultsofvaarn",
   "title": "Vaults of Vaarn",
   "description": "Vaults of Vaarn is a rules toolkit and setting created by Leo Hunt for exploring a post apocalyptic, near earth wasteland.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "10",
   "compatibility": {
@@ -106,6 +106,6 @@
   "primaryTokenAttribute": "health",
   "url": "https://github.com/omniczech/vaultsofvaarn",
   "manifest": "https://raw.githubusercontent.com/omniczech/vaarn-foundryvtt/main/system.json",
-  "download": "https://github.com/omniczech/vaarn-foundryvtt/archive/refs/tags/0.0.4.zip",
+  "download": "https://github.com/omniczech/vaarn-foundryvtt/archive/refs/tags/0.0.5.zip",
   "license": "LICENSE.txt"
 }
