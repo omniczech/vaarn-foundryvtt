@@ -47,6 +47,8 @@ export class KnaveActorSheet extends ActorSheet {
     });
     html.find(".knave-morale-button").click(this._onMoraleCheck.bind(this));
     html.find(".knave-armor-button").click(this._onArmorCheck.bind(this));
+    html.find(".knave-short-rest-button").click(this._shortRest.bind(this));
+    html.find(".knave-long-rest-button").click(this._longRest.bind(this));
 
     // Update Inventory Item
     html.find(".item-edit").click((ev) => {
@@ -286,5 +288,49 @@ export class KnaveActorSheet extends ActorSheet {
     }
 
     token.actor.update({ "system.health.value": newHP });
+  }
+  _shortRest(event) {
+    const conBonus = this.object.system.abilities.con.value;
+    let formula = `1d8+${conBonus}`;
+    let r = new Roll(formula);
+    r.evaluate({ async: false });
+    this.object.update({
+      "system.health.value": r.total + this.object.system.health.value,
+    });
+
+    ChatMessage.create({
+      user: game.user._id,
+      // speaker: ChatMessage.getSpeaker({ actor: token.actor }),
+      content: `${this.object.name} has taken a short rest and recovered ${r.total} health`,
+    });
+
+    // this.object.update({'system.health.value':this.object.data.data.system.health.value +this.object.})
+    // this.object.update({'system.health.value':this.object.data.data.system.health.max})
+  }
+  _longRest(event) {
+    const wounds = this.object.items._source.filter((x) =>
+      x.name.startsWith("Wound")
+    );
+    if (wounds.length < 1) {
+      this.object.update({
+        "system.health.value": this.object.system.health.max,
+      });
+
+      ChatMessage.create({
+        user: game.user._id,
+        // speaker: ChatMessage.getSpeaker({ actor: token.actor }),
+        content: `${this.object.name} has taken a long rest and recovered to their max health`,
+      });
+    } else {
+      var randomWound = wounds[Math.floor(Math.random() * wounds.length)];
+      const { name, _id } = randomWound;
+      var selectedWound = this.object.items.get(_id);
+      selectedWound.delete();
+      ChatMessage.create({
+        user: game.user._id,
+        // speaker: ChatMessage.getSpeaker({ actor: token.actor }),
+        content: `${this.object.name} healed ${name} instead of healing hp`,
+      });
+    }
   }
 }
