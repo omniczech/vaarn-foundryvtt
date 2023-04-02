@@ -413,3 +413,19 @@
   outline: 2px solid var(--highlight-background-color);
   box-shadow: 0 0 10px var(--highlight-background-color);
 }
+.knave .sheet-body,
+.knave .sheet-body .tab,
+.knave .sheet-body .tab .editor,
+.dialog .dialog-buttons button {
+  background: var(--highlight-background-color);
+  color: var(--text-color);
+}
+
+.dialog .dialog-buttons {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+.dialog select {
+  background: var(--highlight-background-color);
+  color: var(--text-color);
+}

@@ -3,7 +3,7 @@
   "name": "vaultsofvaarn",
   "title": "Vaults of Vaarn",
   "description": "Vaults of Vaarn is a rules toolkit and setting created by Leo Hunt for exploring a post apocalyptic, near earth wasteland.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "10",
   "compatibility": {
@@ -99,6 +99,13 @@
       "system": "vaultsofvaarn",
       "path": "./packs/weapons.db",
       "entity": "Item"
+    },
+    {
+      "name": "wounds",
+      "label": "Wounds",
+      "system": "vaultsofvaarn",
+      "path": "./packs/wounds.db",
+      "entity": "Item"
     }
   ],
   "gridDistance": 5,
@@ -106,6 +113,6 @@
   "primaryTokenAttribute": "health",
   "url": "https://github.com/omniczech/vaultsofvaarn",
   "manifest": "https://raw.githubusercontent.com/omniczech/vaarn-foundryvtt/main/system.json",
-  "download": "https://github.com/omniczech/vaarn-foundryvtt/archive/refs/tags/0.0.5.zip",
+  "download": "https://github.com/omniczech/vaarn-foundryvtt/archive/refs/tags/0.0.6.zip",
   "license": "LICENSE.txt"
 }

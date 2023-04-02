@@ -92,7 +92,7 @@
     }
   },
   "Item": {
-    "types": ["item", "weaponMelee", "weaponRanged", "armor"],
+    "types": ["item", "weaponMelee", "weaponRanged", "armor", "wound"],
     "templates": {
       "base": {
         "name": "",
@@ -126,6 +126,9 @@
     "armor": {
       "templates": ["base", "quality"],
       "defense": 11
+    },
+    "wound": {
+      "templates": ["base"]
     }
   }
 }

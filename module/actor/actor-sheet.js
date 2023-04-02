@@ -49,6 +49,7 @@ export class KnaveActorSheet extends ActorSheet {
     html.find(".knave-armor-button").click(this._onArmorCheck.bind(this));
     html.find(".knave-short-rest-button").click(this._shortRest.bind(this));
     html.find(".knave-long-rest-button").click(this._longRest.bind(this));
+    html.find(".knave-wounded-button").click(this._wounded.bind(this));
 
     // Update Inventory Item
     html.find(".item-edit").click((ev) => {
@@ -308,9 +309,8 @@ export class KnaveActorSheet extends ActorSheet {
     // this.object.update({'system.health.value':this.object.data.data.system.health.max})
   }
   _longRest(event) {
-    const wounds = this.object.items._source.filter((x) =>
-      x.name.startsWith("Wound")
-    );
+    const wounds = this.object.items._source.filter((x) => x.type === "wound");
+    console.log(this.object);
     if (wounds.length < 1) {
       this.object.update({
         "system.health.value": this.object.system.health.max,
@@ -332,5 +332,27 @@ export class KnaveActorSheet extends ActorSheet {
         content: `${this.object.name} healed ${name} instead of healing hp`,
       });
     }
+  }
+  _wounded(event) {
+    console.log(this.object, this, event, Items);
+    const allWounds = game.items.filter((item) => item.type === "wound");
+    console.log(allWounds);
+    var randomWound = allWounds[Math.floor(Math.random() * allWounds.length)];
+    console.log(allWounds, randomWound);
+
+    const itemData = {
+      name: randomWound.name,
+      type: randomWound.type,
+      data: randomWound.data,
+      img: randomWound.img,
+    };
+    ChatMessage.create({
+      user: game.user._id,
+      // speaker: ChatMessage.getSpeaker({ actor: token.actor }),
+      content: `${this.object.name} has acquired the following wound: ${randomWound.name}! They will have to take a long rest to heal this wound and recover`,
+    });
+
+    const cls = getDocumentClass("Item");
+    return cls.create(randomWound, { parent: this.actor });
   }
 }
