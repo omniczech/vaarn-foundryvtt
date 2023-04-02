@@ -45,55 +45,6 @@
       "entity": "Item"
     },
     {
-      "name": "light",
-      "label": "Light",
-      "system": "vaultsofvaarn",
-      "path": "./packs/light.db",
-      "entity": "Item"
-    },
-    {
-      "name": "macros",
-      "label": "Macros",
-      "system": "vaultsofvaarn",
-      "path": "./packs/macros.db",
-      "entity": "Macro"
-    },
-    {
-      "name": "other",
-      "label": "Other",
-      "system": "vaultsofvaarn",
-      "path": "./packs/other.db",
-      "entity": "RollTable"
-    },
-    {
-      "name": "rules",
-      "label": "Rules",
-      "system": "vaultsofvaarn",
-      "path": "./packs/rules.db",
-      "entity": "JournalEntry"
-    },
-    {
-      "name": "spells",
-      "label": "Spells",
-      "system": "vaultsofvaarn",
-      "path": "./packs/spells.db",
-      "entity": "Item"
-    },
-    {
-      "name": "starting-gear",
-      "label": "Starting Gear",
-      "system": "vaultsofvaarn",
-      "path": "./packs/starting-gear.db",
-      "entity": "RollTable"
-    },
-    {
-      "name": "traits",
-      "label": "Traits",
-      "system": "vaultsofvaarn",
-      "path": "./packs/traits.db",
-      "entity": "RollTable"
-    },
-    {
       "name": "weapons",
       "label": "Weapons",
       "system": "vaultsofvaarn",
