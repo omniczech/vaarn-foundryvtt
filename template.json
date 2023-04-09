@@ -92,7 +92,15 @@
     }
   },
   "Item": {
-    "types": ["item", "weaponMelee", "weaponRanged", "armor", "wound"],
+    "types": [
+      "item",
+      "weaponMelee",
+      "weaponRanged",
+      "armor",
+      "wound",
+      "exotica",
+      "mysticGifts"
+    ],
     "templates": {
       "base": {
         "name": "",
@@ -128,6 +136,12 @@
       "defense": 11
     },
     "wound": {
+      "templates": ["base"]
+    },
+    "exotica": {
+      "templates": ["base"]
+    },
+    "mysticGifts": {
       "templates": ["base"]
     }
   }

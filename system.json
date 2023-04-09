@@ -31,6 +31,13 @@
       "entity": "Item"
     },
     {
+      "name": "exotica",
+      "label": "Exotica",
+      "system": "vaultsofvaarn",
+      "path": "./packs/exotica.db",
+      "entity": "Item"
+    },
+    {
       "name": "food",
       "label": "Food",
       "system": "vaultsofvaarn",
@@ -42,6 +49,13 @@
       "label": "Items",
       "system": "vaultsofvaarn",
       "path": "./packs/items.db",
+      "entity": "Item"
+    },
+    {
+      "name": "mysticGifts",
+      "label": "Mystic Gifts",
+      "system": "vaultsofvaarn",
+      "path": "./packs/mysticGifts.db",
       "entity": "Item"
     },
     {
