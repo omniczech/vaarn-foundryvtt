@@ -2,14 +2,14 @@
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class KnaveActorSheet extends ActorSheet {
+export class KnaveFoeSheet extends ActorSheet {
   #_hitTargets = new Set();
 
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["knave", "sheet", "actor"],
-      template: "systems/vaultsofvaarn/templates/actor/actor-sheet.html",
+      template: "systems/vaultsofvaarn/templates/actor/foe-sheet.html",
       width: 1000,
       height: 620,
       tabs: [
@@ -108,7 +108,7 @@ export class KnaveActorSheet extends ActorSheet {
     let name = "";
     switch (ability) {
       case "str":
-        score = this.object.system.abilities.str.value;
+        score = this.object.system.hd.value;
         if (additional) {
           name = additional;
         } else {
@@ -116,7 +116,7 @@ export class KnaveActorSheet extends ActorSheet {
         }
         break;
       case "dex":
-        score = this.object.system.abilities.dex.value;
+        score = this.object.system.hd.value;
         if (additional) {
           name = additional;
         } else {
@@ -164,11 +164,10 @@ export class KnaveActorSheet extends ActorSheet {
   _onMoraleCheck(event) {
     event.preventDefault();
 
-    let r = new Roll(`2d6`);
+    let r = new Roll(`1d20+${this.object.system.morale.value}`);
     r.evaluate({ async: false });
-
     let messageHeader = "";
-    if (r.dice[0].total > this.object.system.morale.value)
+    if (r._total < 15)
       messageHeader +=
         '<span class="knave-ability-crit knave-ability-critFailure">Is fleeing</span>';
     else

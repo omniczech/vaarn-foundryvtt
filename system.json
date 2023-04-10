@@ -1,76 +1,95 @@
 {
   "id": "vaultsofvaarn",
-  "name": "vaultsofvaarn",
   "title": "Vaults of Vaarn",
   "description": "Vaults of Vaarn is a rules toolkit and setting created by Leo Hunt for exploring a post apocalyptic, near earth wasteland.",
   "version": "0.0.7",
-  "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "10",
   "compatibility": {
-    "minimum": 10,
+    "minimum": "10",
     "verified": "10.291"
   },
-  "templateVersion": 2,
-  "author": "omniczech",
   "esmodules": ["module/knave.js"],
   "styles": ["css/knave.css"],
-  "scripts": [],
   "packs": [
     {
       "name": "armor",
       "label": "Armor",
       "system": "vaultsofvaarn",
-      "path": "./packs/armor.db",
-      "entity": "Item"
+      "path": "packs/armor.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "clothing",
       "label": "Cothing",
       "system": "vaultsofvaarn",
-      "path": "./packs/clothing.db",
-      "entity": "Item"
+      "path": "packs/clothing.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "exotica",
       "label": "Exotica",
       "system": "vaultsofvaarn",
-      "path": "./packs/exotica.db",
-      "entity": "Item"
+      "path": "packs/exotica.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "food",
       "label": "Food",
       "system": "vaultsofvaarn",
-      "path": "./packs/food.db",
-      "entity": "Item"
+      "path": "packs/food.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "items",
       "label": "Items",
       "system": "vaultsofvaarn",
-      "path": "./packs/items.db",
-      "entity": "Item"
+      "path": "packs/items.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "mysticGifts",
       "label": "Mystic Gifts",
       "system": "vaultsofvaarn",
-      "path": "./packs/mysticGifts.db",
-      "entity": "Item"
+      "path": "packs/mysticGifts.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "weapons",
       "label": "Weapons",
       "system": "vaultsofvaarn",
-      "path": "./packs/weapons.db",
-      "entity": "Item"
+      "path": "packs/weapons.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     },
     {
       "name": "wounds",
       "label": "Wounds",
       "system": "vaultsofvaarn",
-      "path": "./packs/wounds.db",
-      "entity": "Item"
+      "path": "packs/wounds.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "foes",
+      "label": "Foes",
+      "system": "vaultsofvaarn",
+      "path": "packs/foes.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
     }
   ],
   "gridDistance": 5,
@@ -79,5 +98,11 @@
   "url": "https://github.com/omniczech/vaultsofvaarn",
   "manifest": "https://raw.githubusercontent.com/omniczech/vaarn-foundryvtt/main/system.json",
   "download": "https://github.com/omniczech/vaarn-foundryvtt/archive/refs/tags/0.0.7.zip",
-  "license": "LICENSE.txt"
+  "license": "LICENSE.txt",
+  "authors": [
+    {
+      "name": "omniczech",
+      "flags": {}
+    }
+  ]
 }

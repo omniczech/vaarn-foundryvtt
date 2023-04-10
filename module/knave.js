@@ -1,6 +1,7 @@
 // Import Modules
 import { KnaveActor } from "./actor/actor.js";
 import { KnaveActorSheet } from "./actor/actor-sheet.js";
+import { KnaveFoeSheet } from "./actor/foe-sheet.js";
 import { KnaveItem } from "./item/item.js";
 import { KnaveItemSheet } from "./item/item-sheet.js";
 
@@ -26,6 +27,7 @@ Hooks.once("init", async function () {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("knave", KnaveActorSheet, { makeDefault: true });
+  Actors.registerSheet("knave", KnaveFoeSheet, { makeDefault: false });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("knave", KnaveItemSheet, { makeDefault: true });
 
@@ -49,7 +51,7 @@ Hooks.once("init", async function () {
   });
 
   Handlebars.registerHelper("inventorySlots", function (inventorySlots) {
-    if (inventorySlots.used >= inventorySlots.value)
+    if (inventorySlots && inventorySlots.used >= inventorySlots.value)
       return new Handlebars.SafeString(
         '<span class="knave-encumbered">' +
           inventorySlots.used +
@@ -57,7 +59,7 @@ Hooks.once("init", async function () {
           inventorySlots.value +
           "</span>"
       );
-    else
+    else if (inventorySlots)
       return new Handlebars.SafeString(
         inventorySlots.used + "/" + inventorySlots.value
       );
