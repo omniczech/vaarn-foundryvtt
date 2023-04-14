@@ -49,6 +49,12 @@ export class KnaveActor extends Actor {
     }
   }
   _prepareFoeData(actorData) {
+    actorData.items.map((i) => {
+      console.log(i);
+      if (i.name === "null") {
+        actorData.items.delete(i.id);
+      }
+    });
     const data = actorData.system;
     data.armor.bonus = Number(data.armor.value) - Number(10);
     console.log(data, actorData, actorData.items);
