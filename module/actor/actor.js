@@ -35,7 +35,7 @@ export class KnaveActor extends Actor {
     let used = 0;
     for (let i of actorData.items) {
       //calculate max inventory slots and used slots
-      used += i.system.slots;
+      used += i.system.slots * 1;
       //check if actor can use spell based on level
       if (i.type === "spell")
         i.system.spellUsable =
