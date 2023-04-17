@@ -111,11 +111,7 @@
         "name": "",
         "description": "",
         "quantity": 1,
-        "slots": 1,
-        "coppers": 1
-      },
-      "quality": {
-        "quality": { "value": 1, "min": 0, "max": 1 }
+        "slots": 1
       },
       "weapon": {
         "damageDice": "1d3",
@@ -126,10 +122,10 @@
       "templates": ["base"]
     },
     "weaponMelee": {
-      "templates": ["base", "quality", "weapon"]
+      "templates": ["base", "weapon"]
     },
     "weaponRanged": {
-      "templates": ["base", "quality", "weapon"],
+      "templates": ["base", "weapon"],
       "ammo": {
         "value": 0,
         "min": 0,
@@ -137,7 +133,7 @@
       }
     },
     "armor": {
-      "templates": ["base", "quality"],
+      "templates": ["base"],
       "defense": 11
     },
     "wound": {
