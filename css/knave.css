@@ -247,7 +247,7 @@
 }
 
 .knave .items-list .item {
-  height: 30px;
+  align-items: center;
   line-height: 24px;
   padding: 3px 0;
   border-bottom: 1px solid #bbb;
