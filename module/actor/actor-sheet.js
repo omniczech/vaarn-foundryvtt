@@ -72,6 +72,18 @@ export class KnaveActorSheet extends ActorSheet {
       const item = this.actor.items.get(li.data("itemId"));
       this._onItemRoll(item, ev.currentTarget);
     });
+    html.find(".item-control.item-add").click((ev) => {
+      const button = ev.currentTarget;
+      const li = button.closest(".item");
+      const item = this.actor.items.get(li?.dataset.itemId);
+      item.update({ ["data.quantity"]: item.system.quantity + 1 });
+    });
+    html.find(".item-control.item-remove").click((ev) => {
+      const button = ev.currentTarget;
+      const li = button.closest(".item");
+      const item = this.actor.items.get(li?.dataset.itemId);
+      item.update({ ["data.quantity"]: item.system.quantity - 1 });
+    });
   }
 
   /* -------------------------------------------- */
@@ -159,6 +171,13 @@ export class KnaveActorSheet extends ActorSheet {
       flavor: messageHeader,
     });
     return r;
+  }
+  _onQuantityAdd(event) {
+    console.log(event, this.actor.items);
+    this.update({ ["data.quantity"]: this.system.quantity + 1 });
+  }
+  _onQuantityRemove(event) {
+    console.log(event);
   }
 
   _onMoraleCheck(event) {

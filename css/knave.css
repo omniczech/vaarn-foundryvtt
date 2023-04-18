@@ -36,6 +36,9 @@
   margin: 10px 0;
   padding: 0;
 }
+.grid-1-2 {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+}
 
 .grid-3col {
   grid-column: span 3 / span 3;
@@ -53,8 +56,8 @@
 }
 
 .grid-6col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-column: span 6 / span 6;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-7col {
@@ -85,6 +88,14 @@
 .grid-12col {
   grid-column: span 12 / span 12;
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  align-items: center;
 }
 
 .flex-group-center,
@@ -279,6 +290,15 @@
 
 .knave .item-roll img:hover {
   opacity: 0.5;
+}
+.knave .item-roll {
+  cursor: pointer;
+  color: #fff;
+}
+.knave .item-roll button {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .knave-ability-button {
