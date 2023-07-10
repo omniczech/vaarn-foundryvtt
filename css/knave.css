@@ -447,3 +447,8 @@
   background: var(--highlight-background-color);
   color: var(--text-color);
 }
+
+form .notes {
+  background: var(--highlight-background-color);
+  color: var(--text-color);
+}

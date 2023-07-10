@@ -1,3 +1,5 @@
+import { alternateRolls } from "../settings.js";
+
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -118,6 +120,10 @@ export class KnaveActorSheet extends ActorSheet {
   _onAbility_Clicked(ability, additional = null) {
     let score = 0;
     let name = "";
+    var diceToRoll = alternateRolls() ? "2d10" : "1d20";
+    var critFail= alternateRolls() ? 3 : 1;
+    var critSuccess= alternateRolls() ? 19 : 20;
+
     switch (ability) {
       case "str":
         score = this.object.system.abilities.str.value;
@@ -153,16 +159,16 @@ export class KnaveActorSheet extends ActorSheet {
         break;
     }
 
-    let formula = `2d10+${score}`;
+    let formula = `${diceToRoll}+${score}`;
     let r = new Roll(formula);
     r.evaluate({ async: false });
 
     let returnCode = 0;
     let messageHeader = "<b>" + name + "</b>";
-    if (r.dice[0].total <= 3)
+    if (r.dice[0].total <= critFail)
       messageHeader +=
         ' - <span class="knave-ability-crit knave-ability-critFailure">CRITICAL FAILURE!</span>';
-    else if (r.dice[0].total >= 19)
+    else if (r.dice[0].total >= critSuccess)
       messageHeader +=
         ' - <span class="knave-ability-crit knave-ability-critSuccess">CRITICAL SUCCESS!</span>';
 

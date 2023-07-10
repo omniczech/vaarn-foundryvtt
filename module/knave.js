@@ -4,8 +4,13 @@ import { KnaveActorSheet } from "./actor/actor-sheet.js";
 import { KnaveFoeSheet } from "./actor/foe-sheet.js";
 import { KnaveItem } from "./item/item.js";
 import { KnaveItemSheet } from "./item/item-sheet.js";
+import { Vaarn } from "./config.js";
+import { registerSystemSettings } from "./settings.js";
 
 Hooks.once("init", async function () {
+
+  CONFIG.Vaarn = Vaarn;
+  registerSystemSettings();
   game.knave = {
     KnaveActor,
     KnaveItem,
@@ -19,7 +24,6 @@ Hooks.once("init", async function () {
     formula: "1d20",
     decimals: 2,
   };
-
   // Define custom Entity classes
   CONFIG.Actor.documentClass = KnaveActor;
   CONFIG.Item.documentClass = KnaveItem;
