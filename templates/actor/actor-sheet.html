@@ -19,7 +19,7 @@
                   <div class="abilities grid grid-4col">
                     <div class="flex-group-center">
                        <label for="system.level.value" class="resource-label">LEVEL</label>
-                       <input type="text" name="system.level.val ue" value="{{data.system.level.value}}" data-dtype="Number"/>
+                       <input type="text" name="system.level.value" value="{{data.system.level.value}}" data-dtype="Number"/>
                     </div>
                     <div class="flex-group-center">
                        <label for="system.xp.value" class="resource-label">XP</label>
@@ -39,9 +39,9 @@
                           <span class="resource-label center">HP:</span>
                           <input type="text" name="system.health.value" value="{{data.system.health.value}}" data-dtype="Number"/>/
                           <input type="text" name="system.health.max" value="{{data.system.health.max}}" data-dtype="Number"/>
-                          <button class="knave-short-rest-button resource-label armor" >SHORT REST</button>
-                          <button class="knave-long-rest-button resource-label armor" >LONG REST</button>
-                          <button class="knave-wounded-button resource-label armor" >WOUNDED</button>
+                          <button class="knave-short-rest-button resource-label armor" type="button" >SHORT REST</button>
+                          <button class="knave-long-rest-button resource-label armor" type="button" >LONG REST</button>
+                          <button class="knave-wounded-button resource-label armor" type="button" >WOUNDED</button>
                       </div>
                     </div>
                     <div>
@@ -50,7 +50,7 @@
                           <span class="resource-label">DEFENSE</span><span class="resource-label">ABILITY</span><span class="resource-label">BONUS</span><span class="resource-label">DEFENSE</span><span class="resource-label">ABILITY</span><span class="resource-label">BONUS</span>
                           {{#each data.system.abilities as |ability key|}}
                           <span class="ability-mod">{{numberFormat ability.defense decimals=0 sign=false}}</span>
-                          <button class="knave-ability-button resource-label {{key}}" id="{{key}}">{{key}}</button>
+                          <button class="knave-ability-button resource-label {{key}}" type="button" id="{{key}}">{{key}}</button>
                           <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number" maxlength="2" max="10" min="-10"/>
                           {{/each}}
                        </div>
@@ -83,8 +83,8 @@
                  {{#if (isWeapon item)}}
                  <li class="item flexrow" data-item-id="{{item.id}}">
                     <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
-                    <div class="item-image item-roll" title="attack"><button>Attack</button></div>
-                    <div class="item-image item-roll" title="damage"><button>Damage</button></div>
+                    <div class="item-image item-roll" title="attack"><button type="button">Attack</button></div>
+                    <div class="item-image item-roll" title="damage"><button type="button">Damage</button></div>
                     <h4 class="item-name {{#if (isItemBroken item)}}knave-encumbered{{/if}}">{{item.name}}</h4>
                     </span>
                  </li>
